@@ -1,0 +1,11 @@
+anndata==0.10.9
+numpy==1.26.4
+networkx==3.2.1
+scikit-learn==1.5.1
+scikit-misc==0.3.1
+scipy==1.12.0
+seaborn==0.13.2
+tqdm==4.66.4
+pandas==2.0
+scanpy==1.10.3
+decorator
