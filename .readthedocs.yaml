@@ -2,25 +2,17 @@
 version: 2
 
 build:
-  os: "ubuntu-20.04"
+  os: ubuntu-22.04
   tools:
     python: "3.9"
-  jobs:
-    # pre_install: 在环境中安装 uv 本身
-    pre_install:
-      - "pip install uv"
-      - "uv --version"
-
-    # post_install: 使用 uv 来极速安装所有依赖
-    post_install:
-      # 'uv pip install --upgrade --no-cache .[doc]' is an alternative to `uv pip sync`
-      - "uv pip install --upgrade --no-cache .[doc]"
-      - 'python -c "import scmagnify"'
-      # 如果你更想尝试 sync（从 pyproject.toml 安装所有依赖与 extras），可以替换为：
-      # - "uv pip sync --all-extras --no-cache"
-
-      # 设置 Sphinx 配置
+    
 sphinx:
   builder: html
   configuration: source/conf.py
   fail_on_warning: false
+
+python:
+  install:
+    - method: pip
+      path: .
+    - requirements: source/requirements.txt
