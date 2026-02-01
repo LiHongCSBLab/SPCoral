@@ -38,7 +38,8 @@ Download the file from github:
 Install the appropriate version of pytorch and dgl.
 ---------------------------------------------------
 
-[Install pytorch](https://pytorch.org/get-started/locally/)
+`Install pytorch`<https://pytorch.org/get-started/locally/>
 
-[Install dgl](https://www.dgl.ai/pages/start.html)
+`Install dgl`<https://www.dgl.ai/pages/start.html>
+
 
