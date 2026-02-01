@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spcoral"                                      
+version = "0.0.1"
+description = "A python package for registering and integrating cross-model spatial omics"
+readme = { file = "README.md", content-type = "text/markdown" } 
+requires-python = ">=3.9"
+license = { text = "AGPL-3.0" }
+authors = [
+    { name = "Heqi Wang", email = "wangheqi2021@sinh.ac.cn" }
+]
+keywords = [
+    "bio-informatics",
+    "spatial multi-omics",
+    "spatial transcriptomics",
+    "spatial data analysis",
+    "Alignment",
+    "Integration"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dynamic = ["dependencies"]                            
+
+[project.urls]
+Homepage = "https://github.com/LiHongCSBLab/SPCoral"
+Repository = "https://github.com/LiHongCSBLab/SPCoral"
+# Issues = "https://github.com/LiHongCSBLab/SPCoral/issues"  
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["spcoral*"]      
+namespaces = false
