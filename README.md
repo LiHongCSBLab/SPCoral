@@ -1,3 +1,14 @@
+<a href="https://pypi.python.org/pypi/spcoral">
+    <img src="https://img.shields.io/pypi/v/spcoral.svg" alt="PyPI Version">
+</a>
+<a href="https://pepy.tech/project/spcoral">
+<img src="https://static.pepy.tech/personalized-badge/spcoral?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads"
+alt="PyPI downloads">
+</a>
+<a href='https://spcoral.readthedocs.io/en/latest/?badge=latest'>
+    <img src='https://readthedocs.org/projects/spcoral/badge/?version=latest' alt='Documentation Status' />
+</a>
+
 # SPCoral: A package for **Sp**atial **C**ross multi-**O**mics **R**egistration and **A**na**L**ysis
 
 <div align=center><img width = '180' height ='180' src ="LOGO_spcoral.png"/></div>
@@ -21,5 +32,6 @@ github:
     python setup.py install
 
 ```
+
 
 
