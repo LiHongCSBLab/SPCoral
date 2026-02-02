@@ -18,7 +18,7 @@ alt="PyPI downloads">
 
 ## Pipeline
 
-
+<div align=center><img width = '800' height ='1200' src ="spcoral_introduction.png"/></div>
 
 ## Installation
 pip:
@@ -32,6 +32,7 @@ github:
     python setup.py install
 
 ```
+
 
 
 
